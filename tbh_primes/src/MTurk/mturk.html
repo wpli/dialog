@@ -1,0 +1,222 @@
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+ <script type="text/javascript"
+src="https://wami-gapp.googlecode.com/hg/public/turk/turk.js"></script>
+<script type="text/javascript">
+function verifier(){
+   var numFilled = 0;
+   $(".entry").each(
+       function(){
+           if($(this).val().trim().length > 0){
+               numFilled++;
+           }
+       }
+   );
+
+   if((numFilled < 60)) {
+       alert("In order to submit, you must fill in all the fields.") ;
+       return false;
+   } else{
+       return true;
+   }
+}
+
+$(document).ready(function() {
+Turk.setup(verifier);
+});
+
+</script>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Imagine you live in a nursing home and you are asking a voice
+assistant (like Siri) or a helper who can answer questions for
+you.</h3>
+<p>Write a sentence below that you would ask the voice assistant in
+each text box. Make each question different and follow the
+instructions. Do not use the example sentence. Please use correct
+spelling. You do not need quotation marks.</p>
+<p>1. Ask for the time of day without using the word &quot;time.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="time1" size="100"
+id="time1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="time2" size="100"
+id="time2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="time3" size="100"
+id="time3" /></p>
+<p>&nbsp;</p>
+<p>2. Ask for the date without using the word &quot;date.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="date1" size="100"
+id="date1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="date2" size="100"
+id="date2" /></p>
+<p>&nbsp;</p>
+<p>3. Ask for the weather today without using the words
+&quot;weather&quot; or &quot;today&quot;. &nbsp;(Example: &quot;Is it
+nice outside?&quot;)</p>
+<p>&nbsp;<input class="entry" type="text" name="weather1" size="100"
+id="weather1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weather2" size="100"
+id="weather2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weather3" size="100"
+id="weather3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weather4" size="100"
+id="weather4" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weather5" size="100"
+id="weather5" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weather6" size="100"
+id="weather6" /></p>
+<p>&nbsp;</p>
+<p>4. Ask for the activities schedule today without using the words
+&quot;activities&quot; or &quot;today&quot;. &nbsp;(Example:
+&quot;What will I be doing later?&quot;)</p>
+<p>&nbsp;<input class="entry" type="text" name="activities1"
+size="100" id="activities1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activities2"
+size="100" id="activities2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activities3"
+size="100" id="activities3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activities4"
+size="100" id="activities4" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activities5"
+size="100" id="activities5" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activities6"
+size="100" id="activities6" /></p>
+<p>4. Ask for the breakfast menu for today without using the word
+&quot;breakfast&quot;.&nbsp;</p>
+<p>&nbsp;<input class="entry" type="text" name="breakfast1" size="100"
+id="breakfast1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="breakfast2" size="100"
+id="breakfast2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="breakfast3" size="100"
+id="breakfast3" /></p>
+<p>5. Ask for the lunch menu for today without using the word
+&quot;lunch.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="lunch1" size="100"
+id="lunch1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunch2" size="100"
+id="lunch2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunch3" size="100"
+id="lunch3" /></p>
+<p>6. Ask for the dinner menu for today without using word
+&quot;dinner&quot; or &quot;supper.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="dinner1" size="100"
+id="dinner1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinner2" size="100"
+id="dinner2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinner3" size="100"
+id="dinner3" /></p>
+<p>7. Ask to make a phone call without using the word
+&quot;phone.&quot; (Example: &quot;I want to make a call&quot;).</p>
+<p>&nbsp;<input class="entry" type="text" name="phone1" size="100"
+id="phone1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="phone2" size="100"
+id="phone2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="phone3" size="100"
+id="phone3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="phone4" size="100"
+id="phone4" /></p>
+<p>8. Ask to hang up the phone without using the word &quot;hang up.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="hangup1" size="100"
+id="hangup1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="hangup2" size="100"
+id="hangup2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="hangup3" size="100"
+id="hangup3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="hangup4" size="100"
+id="hangup4" /></p>
+<p>9. Ask for the weather tomorrow without using the word
+&quot;weather&quot;.</p>
+<p>&nbsp;<input class="entry" type="text" name="weathertomorrow1"
+size="100" id="weathertomorrow1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weathertomorrow2"
+size="100" id="weathertomorrow2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weathertomorrow3"
+size="100" id="weathertomorrow3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weathertomorrow4"
+size="100" id="weathertomorrow4" /></p>
+<p>10. Ask for the weather on Thursday without using the word
+&quot;weather&quot;.</p>
+<p>&nbsp;<input class="entry" type="text" name="weatherthurs1"
+size="100" id="weatherthurs1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weatherthurs2"
+size="100" id="weatherthurs2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weatherthurs3"
+size="100" id="weatherthurs3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="weatherthurs4"
+size="100" id="weatherthurs4" /></p>
+<p>&nbsp;</p>
+<p>11. Ask for the activities schedule tomorrow &nbsp;without using
+the word &quot;activities.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="activitiestom1"
+size="100" id="activitiestom1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitiestom2"
+size="100" id="activitiestom2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitiestom3"
+size="100" id="activitiestom3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitiestom4"
+size="100" id="activitiestom4" /></p>
+<p>&nbsp;</p>
+<p>12. Ask for the activiites schedule on Wednesday without using the
+word &quot;activities.&quot;</p>
+<p>&nbsp;<input class="entry" type="text" name="activitieswed1"
+size="100" id="activitieswed1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitieswed2"
+size="100" id="activitieswed2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitieswed3"
+size="100" id="activitieswed3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="activitieswed4"
+size="100" id="activitieswed4" /></p>
+<div>13. Ask for the lunch menu for tomorrow without using the word
+&quot;lunch&quot;.</div>
+<p>&nbsp;<input class="entry" type="text" name="lunchtom1" size="100"
+id="lunchtom1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtom2" size="100"
+id="lunchtom2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtom3" size="100"
+id="lunchtom3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtom4" size="100"
+id="lunchtom4" /></p>
+<div>&nbsp;</div>
+<div>14. Ask for the lunch menu for Tuesday without using the word
+&quot;lunch&quot;.</div>
+<p>&nbsp;<input class="entry" type="text" name="lunchtues1" size="100"
+id="lunchtues1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtues2" size="100"
+id="lunchtues2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtues3" size="100"
+id="lunchtues3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="lunchtues4" size="100"
+id="lunchtues4" /></p>
+<div>&nbsp;</div>
+<div>15. &nbsp;Ask for the dinner menu for Wednesday without using the
+word &quot;dinner&quot;.</div>
+<p>&nbsp;<input class="entry" type="text" name="dinnerwed1" size="100"
+id="dinnerwed1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnerwed2" size="100"
+id="dinnerwed2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnerwed3" size="100"
+id="dinnerwed3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnerwed4" size="100"
+id="dinnerwed4" /></p>
+<div>&nbsp;</div>
+<div>16. Ask for the dinner menu for tomorrow without using the word
+&quot;dinner&quot;.</div>
+<p>&nbsp;<input class="entry" type="text" name="dinnertom1" size="100"
+id="dinnertom1" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnertom2" size="100"
+id="dinnertom2" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnertom3" size="100"
+id="dinnertom3" /></p>
+<p>&nbsp;<input class="entry" type="text" name="dinnertom4" size="100"
+id="dinnertom4" /></p>
+<p>&nbsp;</p>
+<div>&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+

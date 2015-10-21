@@ -1,0 +1,195 @@
+null yes_record
+null no_record
+system request_keyword
+time time
+time date
+activities today
+activities tomorrow
+activities monday
+activities tuesday
+activities wednesday
+activities thursday
+activities friday
+activities saturday
+activities sunday
+breakfast today
+breakfast tomorrow
+breakfast monday
+breakfast tuesday
+breakfast wednesday
+breakfast thursday
+breakfast friday
+breakfast saturday
+breakfast sunday
+lunch today
+lunch tomorrow
+lunch monday
+lunch tuesday
+lunch wednesday
+lunch thursday
+lunch friday
+lunch saturday
+lunch sunday
+dinner today
+dinner tomorrow
+dinner monday
+dinner tuesday
+dinner wednesday
+dinner thursday
+dinner friday
+dinner saturday
+dinner sunday
+weather today
+weather tomorrow
+weather three_day
+weather monday
+weather tuesday
+weather wednesday
+weather thursday
+weather friday
+weather saturday
+weather sunday
+call_contact 1
+call_contact 2
+call_contact 3
+call_contact 4
+call_contact 5
+call_contact 6
+call_contact 7
+call_contact 8
+call_contact 9
+call_contact 10
+call_contact 11
+call_contact 12
+call_contact 13
+call_contact 14
+call_contact 15
+call_contact 16
+call_contact 17
+call_contact 18
+call_contact 19
+call_contact 20
+call_contact 22
+call_contact 22
+call_contact 23
+call_contact 24
+call_contact 25
+call_contact 26
+call_contact 27
+call_contact 28
+call_contact 29
+call_contact 30
+phone answer_phone
+phone dial_extension
+phone execute_phone_call
+phone fullscreen_video
+phone unfullscreen_video
+phone show_contacts
+phone hang_up
+phone hold_call
+phone make_phone_call
+phone next_page
+phone resume_call
+phone enter_voice_dial
+system go_to_sleep
+system wake_up
+voice_synthesizer audio_off
+voice_synthesizer audio_on
+voice_synthesizer interrupt
+voice_synthesizer speak_text_on_screen
+system request_confirmation time time
+system request_confirmation time date
+system request_confirmation activities today
+system request_confirmation activities tomorrow
+system request_confirmation activities monday
+system request_confirmation activities tuesday
+system request_confirmation activities wednesday
+system request_confirmation activities thursday
+system request_confirmation activities friday
+system request_confirmation activities saturday
+system request_confirmation activities sunday
+system request_confirmation breakfast today
+system request_confirmation breakfast tomorrow
+system request_confirmation breakfast monday
+system request_confirmation breakfast tuesday
+system request_confirmation breakfast wednesday
+system request_confirmation breakfast thursday
+system request_confirmation breakfast friday
+system request_confirmation breakfast saturday
+system request_confirmation breakfast sunday
+system request_confirmation lunch today
+system request_confirmation lunch tomorrow
+system request_confirmation lunch monday
+system request_confirmation lunch tuesday
+system request_confirmation lunch wednesday
+system request_confirmation lunch thursday
+system request_confirmation lunch friday
+system request_confirmation lunch saturday
+system request_confirmation lunch sunday
+system request_confirmation dinner today
+system request_confirmation dinner tomorrow
+system request_confirmation dinner monday
+system request_confirmation dinner tuesday
+system request_confirmation dinner wednesday
+system request_confirmation dinner thursday
+system request_confirmation dinner friday
+system request_confirmation dinner saturday
+system request_confirmation dinner sunday
+system request_confirmation weather today
+system request_confirmation weather tomorrow
+system request_confirmation weather three_day
+system request_confirmation weather monday
+system request_confirmation weather tuesday
+system request_confirmation weather wednesday
+system request_confirmation weather thursday
+system request_confirmation weather friday
+system request_confirmation weather saturday
+system request_confirmation weather sunday
+system request_confirmation call_contact 1
+system request_confirmation call_contact 2
+system request_confirmation call_contact 3
+system request_confirmation call_contact 4
+system request_confirmation call_contact 5
+system request_confirmation call_contact 6
+system request_confirmation call_contact 7
+system request_confirmation call_contact 8
+system request_confirmation call_contact 9
+system request_confirmation call_contact 10
+system request_confirmation call_contact 11
+system request_confirmation call_contact 12
+system request_confirmation call_contact 13
+system request_confirmation call_contact 14
+system request_confirmation call_contact 15
+system request_confirmation call_contact 16
+system request_confirmation call_contact 17
+system request_confirmation call_contact 18
+system request_confirmation call_contact 19
+system request_confirmation call_contact 20
+system request_confirmation call_contact 22
+system request_confirmation call_contact 22
+system request_confirmation call_contact 23
+system request_confirmation call_contact 24
+system request_confirmation call_contact 25
+system request_confirmation call_contact 26
+system request_confirmation call_contact 27
+system request_confirmation call_contact 28
+system request_confirmation call_contact 29
+system request_confirmation call_contact 30
+system request_confirmation phone answer_phone
+system request_confirmation phone dial_extension
+system request_confirmation phone execute_phone_call
+system request_confirmation phone fullscreen_video
+system request_confirmation phone unfullscreen_video
+system request_confirmation phone show_contacts
+system request_confirmation phone hang_up
+system request_confirmation phone hold_call
+system request_confirmation phone make_phone_call
+system request_confirmation phone next_page
+system request_confirmation phone resume_call
+system request_confirmation phone enter_voice_dial
+system request_confirmation system go_to_sleep
+system request_confirmation system wake_up
+system request_confirmation voice_synthesizer audio_off
+system request_confirmation voice_synthesizer audio_on
+system request_confirmation voice_synthesizer interrupt
+system request_confirmation voice_synthesizer speak_text_on_screen

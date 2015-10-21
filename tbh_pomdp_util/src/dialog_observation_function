@@ -1,0 +1,5 @@
+function [ observation ] = dialog_observation_function( pomdp )
+    observation( : , : , 1 ) = [ 0.8 0.8 0.8 0.8 ; 0.2 0.2 0.2 0.2 ];
+    observation( : , : , 2 ) = [ 0.2 0.2 0.2 0.2 ; 0.8 0.8 0.8 0.8 ];
+end
+

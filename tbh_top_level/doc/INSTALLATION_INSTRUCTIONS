@@ -1,0 +1,82 @@
+# Fresh install of Ubuntu 10.10
+sudo apt-get install ssh subversion wicd openssh-server
+
+
+# Install speech recognizer
+Follow the instructions found in:
+/afs/csail/group/rvsn/local_summit/README
+
+# Install softwapre
+svn checkout https://svn.csail.mit.edu/tbh
+
+
+0. Add repositories.
+
+GStreamer is the framework used in the speech interface. It requires some
+packages from SLS repositories. As a non-free program, Skype is also not
+in the Debian repositories.
+
+Add the following sources to /etc/apt/sources.list:
+
+   #deb http://sls:spire@projects.csail.mit.edu/galaxy/apt etch galaxy
+   #deb-src http://sls:spire@projects.csail.mit.edu/galaxy/apt etch galaxy
+   deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+After adding these sources, run:
+
+   sudo apt-get -y update
+
+# Install dependencies:
+* GStreamer
+* Qt4
+* GData
+* Text-to-speech synthesizer (festival)
+* pulseaudio
+* Skype
+
+Run the following command:
+sudo apt-get -y --force-yes install python-gst0.10 gstreamer-tools gstreamer0.10-plugins-base gstreamer0.10-plugins-sls-summitsink libsummit libsummit-dev libfst libfst-dev libgstreamer0.10-dev python-qt4 python-gdata skype python-dbus gsl-bin libgsl0ldbl libgsl0-dev festival pulseaudio libasound2-plugins padevchooser libsdl1.2debian-pulseaudio sox python-decorator python-matplotlib
+
+# Install the GStreamer Speech Activity Detector (gstSAD)
+In the TBH SVN repository, go to:
+
+    tbh/code/trunk/resident_interface/third-party/gstSAD-0.2.9.2/
+
+Enter the following:
+
+   ./configure --prefix=/usr
+   make
+   sudo make install
+
+# Install Skype4Py
+
+In the TBH SVN repository, go to:
+
+   tbh/code/trunk/resident_interface/third-party/Skype4Py/
+
+Enter the following:
+
+   sudo python setup.py install
+
+# Ensure that PulseAudio is configured correctly
+
+In a console, launch:
+   alsamixer
+
+Ensure that the volumes for the master, speaker, and microphone volumes are set
+to a reasonable value (they may be set to 0, which is undesirable).
+
+# Determine microphone setup.
+
+In a console, enter the following to determine the sound card device:
+
+   pactl list | grep -A2 'Source #' | cut -d" " -f2
+
+The microphone should be set in tbh_audio_listener.py. the tbh_resident_interface.py file should pass the microphone name that will be used.
+
+# Make folders
+cd 
+mkdir audio_files
+mkdir logfiles
+
+

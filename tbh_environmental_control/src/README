@@ -1,0 +1,17 @@
+This is a GUI based environmental control using arduino and the python
+programing language.
+
+It was developed by Sebastian Nowak in July of 2011 for The Boston Home progect at CSAIL at MIT. 
+
+To run:
+You will need an arduino board with usb serial wire running "environmentalcontrol.pde"
+and a computer running environmentalcontrol.py 
+Pins 8 through 13 swtich to positive for a short amount of time after reciving data form the GUI. I conected these to optocouplers closeing switches on a remote controlling ac outlets. 
+
+If you have any questions, comments or suggestions please email snowak77@gmail.com
+
+
+Please note:
+This program was writen and tested with an arduino uno and ubuntu 11.04. 
+You do not need to have the Arduino SDK installed on the computer you are running 
+the program on, but you do need it to upload the code to an ardiono board.  

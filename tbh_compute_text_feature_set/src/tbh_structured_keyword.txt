@@ -1,0 +1,49 @@
+//mapped keywords in csv format 
+//go_to, go to , take me to 
+//stop, stop 
+//label, are at, are in , am at, am in 
+//place, kitchen, living room 
+//object, 
+{'label':'greet','phrases':['good day', 'hello'], 'type':'action'}
+{'label':'start_leading','phrases':['lead me', 'take me', 'go to'], 'type':'action'}
+{'label':'victors_office','phrases':['victor', 'victor zue', 'victor office'], 'type':'property'}
+{'label':'seths_office','phrases':['seth', 'seth teller', 'seth office'], 'type':'property'}
+{'label':'csail_headquarters','phrases':['csail headquarters' , 'headquaters'], 'type':'property'}
+{'label':'kitchen','phrases':['kitchen'], 'type':'property'}
+{'label':'living_room','phrases':['living room'], 'type':'property'}
+{'label':'elevator_lobby','phrases':['elevator lobby'], 'type':'property'}
+{'label':'elevator','phrases':['elevator'], 'type':'property'}
+{'label':'meeting_room','phrases':['meeting room'], 'type':'property'}
+{'label':'lab','phrases':['lab'], 'type':'property'}
+{'label':'conference_room','phrases':['meeting room'], 'type':'property'}
+{'label':'lounge','phrases':['lounge'], 'type':'property'}
+{'label':'r_and_d_pub','phrases':['r and d pub'], 'type':'property'}
+{'label':'tig','phrases':['tig'], 'type':'property'}
+{'label':'question_mark','phrases':['question mark'], 'type':'property'}
+{'label':'teds_office','phrases':['ted', 'ted office'], 'type':'property'}
+{'label':'daniellas_lab_ent','phrases':['daniela', 'daniela office', 'daniela lab', 'daniella', 'daniella office', 'daniella lab'], 'type':'property'}
+//{'label':'daniellas_lab','phrases':['daniela', 'daniela office', 'daniela lab'], 'type':'property'}
+{'label':'pr2_lab','phrases':['p r two', 'p r two lab'], 'type':'property'}
+//{'label':'office','phrases':['office'], 'type':'property'}
+{'label':'lounge','phrases':['lounge'], 'type':'property'}
+{'label':'gym','phrases':['gym'], 'type':'property'}
+{'label':'cafeteria','phrases':['cafeteria'], 'type':'property'}
+{'label':'courtyard','phrases':['courtyard'], 'type':'property'}
+{'label':'exit','phrases':['exit'], 'type':'property'}
+{'label':'amphitheater','phrases':['amphitheater'], 'type':'property'}
+{'label':'hallway','phrases':['hallway'], 'type':'property'}
+{'label':'entrance','phrases':['entrance'], 'type':'property'}
+{'label':'yes','phrases':['yes','yeah','ok','yep'], 'type':'action'}
+{'label':'no','phrases':['no', 'nope'], 'type':'action'}
+{'label':'wake_up','phrases':['audio on', 'wake up', 'voice on'], 'type':'action'}
+{'label':'sleep','phrases':['audio off', 'sleep', 'voice off'], 'type':'action'}
+{'label':'tagging_we', 'phrases':['we at', 'we are in'], 'type':'action'}
+{'label':'tagging_you', 'phrases':['you at', 'you are in'], 'type':'action'}
+{'label':'tagging_i', 'phrases':['i at', 'i am in'], 'type':'action'}
+{'label':'start_looking', 'phrases':['in front of you', 'behind you'], 'type':'action'}
+{'label':'tracking_status', 'phrases':['do see me'], 'type':'action'}
+{'label':'start_following', 'phrases':['follow me'], 'type':'action'}
+{'label':'start_tour', 'phrases':['go tour', 'show around'], 'type':'action'}
+{'label':'done_with_tour', 'phrases':['done tour', 'done'], 'type':'action'}
+{'label':'stop_action', 'phrases':['stop'], 'type':'action'}
+{'label':'greet', 'phrases':['good morning', 'good evening', 'good day', 'good afternoon'], 'type':'action'}

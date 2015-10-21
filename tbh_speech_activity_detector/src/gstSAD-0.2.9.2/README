@@ -1,0 +1,67 @@
+gstSAD
+------
+
+
+1. Installation
+
+2. Internal Operation
+
+3. Usage
+
+  3.1 Single output port
+
+  3.2 Dual output port
+
+  3.3 Time stamped feature extraction
+
+
+1. Installation
+---------------
+
+gstSAD uses the automake tools so configuartion, comilation and installation follows the usual process:
+
+a. run configure to check availability of all packages and set the installation path using the --prefix argument
+
+b. make
+
+c. make install
+
+
+2. Internal Operation
+---------------------
+
+gstSAD preforms speech activity detection by process the incoming audio signal as a series of non-overlapping frames.
+
+The current (0.2.8.2) version uses energy alone to make a frame based decision on activity.
+
+The frame based decisions are smoothed in a simple state machine to avoid very short sections of activity, and to capture onset and roll off sections of activity.
+
+      |-----------|    |------------|    |-----------|
+      | feature   |    | Classifier |    | Decision  |
+>-----|           |----| ( E > thr) |----| Smoothing |---->
+      | extractor |    |            |    |           |
+      |-----------|    |------------|    |-----------|
+
+3. Usage
+--------
+
+3.1 Single output port
+
+$ gst-launch filesrc location=in.wav ! wavparse ! audioconvert ! audioresample ! audio\x-raw-int, rate=8000, channels=1 ! SAD ! autoaudiosink
+
+3.2 Dual output port
+
+for seperating a source into the active signal and non-active signal
+
+$ gst-launch filesrc location=in.wav ! wavparse ! audioconvert ! audioresample ! audio/x-raw-int, rate=8000, channels=1 ! SAD name=sad sad.activesrc ! queue ! wavenc ! filesink location=active.wav sad.noisesrc ! queue ! wavenc ! filesink location=noise.wav
+
+3.3 Time stamped feature extraction
+
+For collecting the frame based features into a file
+* current (0.2.8.2) features are energy (dBov(sine)) & zero crossing rate.
+* final column is the frame decision
+* times are in micro seconds (us)
+
+$ gst-launch filesrc location=test.wav ! wavparse ! audioconvert ! audioresample ! audio/x-raw-int, rate=8000, channels=1 ! SAD output-features=TRUE ! fakesink | grep ^\< > test.vec
+
+

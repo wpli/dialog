@@ -1,0 +1,49 @@
+<project name="tbh_info_datetime" 
+         default="project.build.target"> 
+
+
+    <!-- The name for this project --> 
+    <property name="project.name" 
+              value="tbh_info_datetime" /> 
+
+
+    <!-- Import our common properties and targets --> 
+    <import file="../../.project_properties/common-python.xml" /> 
+
+
+    <!-- The build target. this is what causes things 
+         to get built ( probably calling external script ) --> 
+    <target name="tbh_info_datetime.build" > 
+        <exec executable="????"> 
+            <arg value="????" /> 
+        </exec> 
+    </target> 
+
+
+    <!-- The test target. This causes the test scripts 
+         to be run ( probably calling external script ) --> 
+    <target name="tbh_info_datetime.test" > 
+        <exec executable="????"> 
+            <arg value="????" /> 
+        </exec> 
+    </target> 
+
+
+    <!-- The clean target. This cleans up anything created 
+         in the test or build targets --> 
+    <target name="tbh_info_datetime.clean" > 
+        <exec executable="????"> 
+            <arg value="????" /> 
+        </exec> 
+        <!-- If you want to delete some files, try: 
+             <delete> 
+                 <fileset dir="." 
+                          includes="**/*.pyc" /> 
+                 </fileset> 
+             </delete> 
+          --> 
+    </target> 
+
+
+</project> 
+

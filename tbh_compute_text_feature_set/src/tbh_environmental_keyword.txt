@@ -1,0 +1,6 @@
+light_on
+light_off
+fan_on
+fan_off
+radio_on
+radio_off
